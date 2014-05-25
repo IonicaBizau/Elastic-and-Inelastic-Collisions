@@ -1,0 +1,55 @@
+﻿<Window x:Class="WpfApplication1.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Ajutor" Height="515" Width="905" Background="#FFB7F6FF" ResizeMode="NoResize" Icon="cioc.png">
+    <Grid>
+        <Grid Name="titlu">
+        <TextBlock Height="47" HorizontalAlignment="Left" Margin="12,12,0,0" Name="textBlock1" Text="Simularea ciocnirilor mecanice" VerticalAlignment="Top" Width="859" TextAlignment="Center" FontSize="32" FontFamily="Snap ITC" Foreground="#FF3524FF" />
+        </Grid>
+        <Grid Name="content">
+            <TextBlock Height="79" HorizontalAlignment="Left" Margin="40,90,0,0" Name="textBlock2" Text="Calculatorul, mijloc de invatamant cel mai modern, oate fi utilizat in lectia de fizica in diverse scopuri, ca de exemplu: la transmiterea de noi cunostinte, la simularea unor experimente, la prelucrarea datelor experimentale, la prezentarea eleganta a 
+rezultatelor experimentale sau la evaluare.
+
+Aceasta este o aplicatie care simuleaza ciocnirile mecanice (plastice si elastice) a doua corpuri printr-o animatie.
+" VerticalAlignment="Top" Width="812" TextWrapping="Wrap" Foreground="#FF860000" />
+
+            <TextBlock Height="286" HorizontalAlignment="Left" Margin="40,175,0,0" Name="textBlock3" TextWrapping="Wrap" FontSize="12" FontFamily="Arial" Foreground="#FF32005C">Programul are 7 optiuni:
+                <LineBreak />
+                <LineBreak />
+                1.	Ciocniri plastice
+                <LineBreak />
+                2.	Ciocniri elastice
+                <LineBreak />
+                3.	Start
+                <LineBreak />
+                4.	Stop
+                <LineBreak />
+                5.	Ajutor
+                <LineBreak />
+                6.	Despre program
+                <LineBreak />
+                7.	Iesire
+                <LineBreak />
+                <LineBreak />
+                Alegand optiunea 'Ciocniri plastice' utilizatorul va putea observa ceea ce se intampla in cadrul ciocnirilor plastice (mai multe detalii in sectiunea 2.3). 
+                <LineBreak />
+                Alegand optiunea 'Ciocniri elastice' utilizatorul va putea observa ceea ce se intampla in cadrul ciocnirilor elastice (mai multe detalii in sectiunea 2.3). 
+                <LineBreak />
+                Alegand optiunea 'Start' programul va simula ciocnirea (plastica sau elastica) in functie de valorile introduse.
+                <LineBreak />
+                Alegand optiunea 'Stop' utilizatorul va opri simularea putand introduce valori noi pentru marimile amintite mai sus.
+                <LineBreak />
+                Alegand optiunea 'Despre' utilizatorul va putea afla informatii despre acest program.
+                <LineBreak />
+                Alegand optiunea 'Iesire' programul se va inchide.
+                <LineBreak/>
+                <LineBreak/>
+                Dupa ce una dintre primele doua optiuni a fost aleasa, utilizatorul va putea introduce valorile pentru vitezele si masele celor doua corpuri (v1, v2, m1, m2). Dupa introducerea unor date corecte utilizatorul va putea observa simularea ciocnirii celor doua corpuri alegad optiunea “Start”. 
+
+Daca utilizatorul doreste sa opreasca simularea, va trebui sa apese pe butonul “Stop”. Dupa aceasta, el va putea introduce valori noi pentru vitezele, respectiv masele celor doua corpuri.
+
+            </TextBlock>
+            <Image Height="200" HorizontalAlignment="Left" Margin="674,120,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="200" Source="E:\\IonicaB\\C#\\Proiect fizica - Ciocniri\\Proiect fizica - Ciocniri\\Images\\help.png" />
+        </Grid>
+    </Grid>
+</Window>

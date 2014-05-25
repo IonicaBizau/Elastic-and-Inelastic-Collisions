@@ -1,0 +1,142 @@
+﻿<Window x:Class="Fizica_ciocniri.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Simularea ciocnirilor mecanice" Height="600" Width="900" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="cioc.png">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FF0062FF" Offset="0" />
+            <GradientStop Color="#FFDBE8FF" Offset="1" />
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <Grid Name="ciocniri_plastice" Visibility="Hidden">
+            <Canvas Name="can_plastice" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="900" Height="600">
+                <Rectangle Canvas.Left="0" Canvas.Top="487" Height="98" Name="rectangle1" Stroke="Black" Width="909" Fill="#FF009DFF" HorizontalAlignment="Left" VerticalAlignment="Bottom" />
+                <TextBlock Canvas.Left="167" Canvas.Top="12" Height="23" Name="textBlock1" Text="Introduceti viteza primului corp (m/s):" Width="301" Foreground="#FFD1FFFF" FontSize="14" />
+                <TextBlock Canvas.Left="167" Canvas.Top="32" FontSize="14" Foreground="#FFD1FFFF" Height="23" Name="textBlock2" Text="Introduceti viteza corpului al doilea (m/s):" Width="301" />
+                <TextBlock Canvas.Left="167" Canvas.Top="51" FontSize="14" Foreground="#FFD1FFFF" Height="23" Name="textBlock3" Text="Introduceti masa primului corp (kg):" Width="301" />
+                <TextBlock Canvas.Left="167" Canvas.Top="71" FontSize="14" Foreground="#FFD1FFFF" Height="23" Name="textBlock4" Text="Introduceti masa corpului al doilea (kg):" Width="301" />
+                <TextBlock Canvas.Left="167" Canvas.Top="100" FontSize="14" Foreground="Yellow" Height="23" Name="textBlock5" Text="Viteza celor doua corpuri este (m/s): " Width="347" FontWeight="Bold" />
+                <TextBox Canvas.Left="474" Canvas.Top="12" Height="18" Name="textBox1" Width="40" Text="" TextChanged="textBox1_TextChanged"  Background="Red" FontSize="10" />
+                <TextBox Canvas.Left="474" Canvas.Top="32" Height="18" Name="textBox2" Text="" Width="40" TextChanged="textBox2_TextChanged"  Background="Red" FontSize="10" />
+                <TextBox Canvas.Left="474" Canvas.Top="51" Height="18" Name="textBox3" Text="" Width="40" TextChanged="textBox3_TextChanged"  Background="Red" FontSize="10" />
+                <TextBox Canvas.Left="474" Canvas.Top="71" Height="18" Name="textBox4" Text="" Width="40" TextChanged="textBox4_TextChanged"  Background="Red" FontSize="10" />
+                <Ellipse Canvas.Left="7" Canvas.Top="438" Height="50" Name="c1" Stroke="Black" Width="50">
+                    <Ellipse.Fill>
+                        <RadialGradientBrush>
+                            <GradientStop Color="White" Offset="0" />
+                            <GradientStop Color="Red" Offset="1" />
+                        </RadialGradientBrush>
+                    </Ellipse.Fill>
+                </Ellipse>
+                <Ellipse Canvas.Left="150" Canvas.Top="438" Height="50" Name="c2" Stroke="Black" Width="50">
+                    <Ellipse.Fill>
+                        <RadialGradientBrush>
+                            <GradientStop Color="White" Offset="0" />
+                            <GradientStop Color="#FF00FF9D" Offset="1" />
+                        </RadialGradientBrush>
+                    </Ellipse.Fill>
+                </Ellipse>
+            </Canvas>
+        </Grid>
+        <Grid Name="ciocniri_elastice" Visibility="Hidden">
+            <Canvas Name="ciocniri_elastice_can">
+                <Rectangle Canvas.Left="0" Canvas.Top="487" Fill="#FF009DFF" Height="98" Name="rectangle2" Stroke="Black" Width="909" />
+
+                <TextBlock Canvas.Left="167" Canvas.Top="12" Height="23" Name="textBlock6" Text="Introduceti viteza primului corp (m/s):" Width="301" Foreground="#FFD1FFFF" FontSize="14" />
+                <TextBlock Canvas.Left="167" Canvas.Top="32" FontSize="14" Foreground="#FFD1FFFF" Height="23" Name="textBlock7" Text="Introduceti viteza corpului al doilea (m/s):" Width="301" />
+                <TextBlock Canvas.Left="167" Canvas.Top="51" FontSize="14" Foreground="#FFD1FFFF" Height="23" Name="textBlock8" Text="Introduceti masa primului corp (kg):" Width="301" />
+                <TextBlock Canvas.Left="167" Canvas.Top="71" FontSize="14" Foreground="#FFD1FFFF" Height="23" Name="textBlock9" Text="Introduceti masa corpului al doilea (kg):" Width="301" />
+
+                <TextBox Canvas.Left="474" Canvas.Top="12" Height="18" Name="textBox5" Width="40" Text="" TextChanged="textBox5_TextChanged" Background="Red" FontSize="10" IsEnabled="True" />
+                <TextBox Canvas.Left="474" Canvas.Top="32" Height="18" Name="textBox6" Text="" Width="40" TextChanged="textBox6_TextChanged" Background="Red" FontSize="10" IsEnabled="True" />
+                <TextBox Canvas.Left="474" Canvas.Top="51" Height="18" Name="textBox7" Text="" Width="40" TextChanged="textBox7_TextChanged" Background="Red" FontSize="10" IsEnabled="True" />
+                <TextBox Canvas.Left="474" Canvas.Top="71" Height="18" Name="textBox8" Text="" Width="40" TextChanged="textBox8_TextChanged" Background="Red" FontSize="10" IsEnabled="True" />
+
+                <Ellipse Canvas.Left="301" Canvas.Top="458" Height="30" Name="c3" Stroke="Black" Width="30">
+                    <Ellipse.Fill>
+                        <RadialGradientBrush>
+                            <GradientStop Color="#FF0011FF" Offset="1" />
+                            <GradientStop Color="White" Offset="0" />
+                        </RadialGradientBrush>
+                    </Ellipse.Fill>
+                </Ellipse>
+                <Ellipse Canvas.Left="400" Canvas.Top="458" Height="30" Name="c4" Stroke="Black" Width="30">
+                    <Ellipse.Fill>
+                        <RadialGradientBrush>
+                            <GradientStop Color="#FFF1FF62" Offset="1" />
+                            <GradientStop Color="White" Offset="0" />
+                        </RadialGradientBrush>
+                    </Ellipse.Fill>
+                </Ellipse>
+                <TextBlock Canvas.Left="167" Canvas.Top="129" FontSize="14" Foreground="Yellow" Height="23" Name="textBlock10" Text="Viteza de dupa ciocnire a primului corp este (m/s): " Width="451" FontWeight="Bold" />
+                <TextBlock Canvas.Left="167" Canvas.Top="159" FontSize="14" Foreground="Yellow" Height="23" Name="textBlock11" Text="Viteza de dupa ciocnire a coprpului al doilea este (m/s): " Width="451" FontWeight="Bold" />
+                
+            </Canvas>
+        </Grid>
+
+        <Button Content="Ciocniri elastice" Height="38" HorizontalAlignment="Left" Margin="12,56,0,0" Name="c_elastice" VerticalAlignment="Top" Width="140" Click="c_elastice_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFC1F2FF" Offset="0" />
+                    <GradientStop Color="#FF00D8FF" Offset="0.562" />
+                    <GradientStop Color="#FFE8FAFF" Offset="1" />
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Content="Ciocniri plastice" Height="38" HorizontalAlignment="Left" Margin="12,12,0,0" Name="c_plastice" VerticalAlignment="Top" Width="140" Click="c_plastice_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFC1F2FF" Offset="0" />
+                    <GradientStop Color="#FF00D8FF" Offset="0.562" />
+                    <GradientStop Color="#FFE8FAFF" Offset="1" />
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Content="Start" Height="38" HorizontalAlignment="Left" Margin="12,100,0,0" Name="start" VerticalAlignment="Top" Width="140" Click="start_click" IsEnabled="False">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF44FF00" Offset="0.546" />
+                    <GradientStop Color="White" Offset="1" />
+                    <GradientStop Color="White" Offset="0" />
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Content="Stop" Height="38" HorizontalAlignment="Left" Margin="12, 144,0, 0" Name="stop" VerticalAlignment="Top" Width="140" Click="stop_click" IsEnabled="False">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="0" />
+                    <GradientStop Color="White" Offset="1" />
+                    <GradientStop Color="Red" Offset="0.519" />
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Content="Ajutor" Height="38" HorizontalAlignment="Left" Margin="12,188,0,0" Name="ajutor" VerticalAlignment="Top" Width="140" Click="ajutor_click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF00FFC4" Offset="0.5" />
+                    <GradientStop Color="White" Offset="1" />
+                    <GradientStop Color="White" Offset="0" />
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Content="Despre program" Height="38" HorizontalAlignment="Left" Margin="12,232,0,0" Name="Despre" VerticalAlignment="Top" Width="140" Click="despre_click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF00FFC4" Offset="0.5" />
+                    <GradientStop Color="White" Offset="1" />
+                    <GradientStop Color="White" Offset="0" />
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Content="Iesire" Height="38" HorizontalAlignment="Left" Margin="12,276,0,0" Name="Iesire" VerticalAlignment="Top" Width="140" Click="iesire_click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF00FFC4" Offset="0.5" />
+                    <GradientStop Color="White" Offset="1" />
+                    <GradientStop Color="White" Offset="0" />
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Window>

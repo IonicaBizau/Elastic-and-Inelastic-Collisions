@@ -1,0 +1,18 @@
+E:\IonicaB\C#\Proiect fizica - Ciocniri\Proiect fizica - Ciocniri\bin\Release\Proiect fizica - Ciocniri.exe.config
+E:\IonicaB\C#\Proiect fizica - Ciocniri\Proiect fizica - Ciocniri\bin\Release\Proiect fizica - Ciocniri.exe
+E:\IonicaB\C#\Proiect fizica - Ciocniri\Proiect fizica - Ciocniri\bin\Release\Proiect fizica - Ciocniri.pdb
+E:\IonicaB\C#\Proiect fizica - Ciocniri\Proiect fizica - Ciocniri\obj\x86\Release\ResolveAssemblyReference.cache
+E:\IonicaB\C#\Proiect fizica - Ciocniri\Proiect fizica - Ciocniri\obj\x86\Release\MainWindow.baml
+E:\IonicaB\C#\Proiect fizica - Ciocniri\Proiect fizica - Ciocniri\obj\x86\Release\Window1.baml
+E:\IonicaB\C#\Proiect fizica - Ciocniri\Proiect fizica - Ciocniri\obj\x86\Release\Window2.baml
+E:\IonicaB\C#\Proiect fizica - Ciocniri\Proiect fizica - Ciocniri\obj\x86\Release\MainWindow.g.cs
+E:\IonicaB\C#\Proiect fizica - Ciocniri\Proiect fizica - Ciocniri\obj\x86\Release\Window1.g.cs
+E:\IonicaB\C#\Proiect fizica - Ciocniri\Proiect fizica - Ciocniri\obj\x86\Release\Window2.g.cs
+E:\IonicaB\C#\Proiect fizica - Ciocniri\Proiect fizica - Ciocniri\obj\x86\Release\App.g.cs
+E:\IonicaB\C#\Proiect fizica - Ciocniri\Proiect fizica - Ciocniri\obj\x86\Release\Proiect fizica - Ciocniri_MarkupCompile.cache
+E:\IonicaB\C#\Proiect fizica - Ciocniri\Proiect fizica - Ciocniri\obj\x86\Release\Proiect fizica - Ciocniri.g.resources
+E:\IonicaB\C#\Proiect fizica - Ciocniri\Proiect fizica - Ciocniri\obj\x86\Release\Ciocniri.Properties.Resources.resources
+E:\IonicaB\C#\Proiect fizica - Ciocniri\Proiect fizica - Ciocniri\obj\x86\Release\GenerateResource-ResGen.read.1.tlog
+E:\IonicaB\C#\Proiect fizica - Ciocniri\Proiect fizica - Ciocniri\obj\x86\Release\GenerateResource-ResGen.write.1.tlog
+E:\IonicaB\C#\Proiect fizica - Ciocniri\Proiect fizica - Ciocniri\obj\x86\Release\Proiect fizica - Ciocniri.exe
+E:\IonicaB\C#\Proiect fizica - Ciocniri\Proiect fizica - Ciocniri\obj\x86\Release\Proiect fizica - Ciocniri.pdb

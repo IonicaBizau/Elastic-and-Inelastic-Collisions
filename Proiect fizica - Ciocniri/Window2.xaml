@@ -1,0 +1,9 @@
+﻿<Window x:Class="WpfApplication1.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Despre program" Height="132" Width="542" Background="#FFA7CFFF" ResizeMode="NoResize" Icon="cioc.png">
+    <Grid>
+        <TextBlock Height="32" HorizontalAlignment="Left" Margin="12,12,0,0" Name="textBlock1" Text="Despre program" VerticalAlignment="Top" Width="496" FontSize="22" Foreground="#FF0011FF" />
+        <TextBlock FontSize="14" Height="36" HorizontalAlignment="Left" Margin="12,50,0,0" Name="textBlock2" Text="Copyright - Ioan BIZĂU 2012 - bizauionica@yahoo.com - Este o aplicatie gratuita. Sunteti incurajati sa o distribuiti iubitorilor de fizica." VerticalAlignment="Top" Width="496" Foreground="#FF230086" TextWrapping="Wrap" />
+    </Grid>
+</Window>
