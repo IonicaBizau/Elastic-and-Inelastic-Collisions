@@ -1,6 +1,6 @@
 {
   "name": "elastic-and-inelastic-collisions-simulation",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simulation of elastic and inelastic collisions",
   "main": "lib/index.js",
   "scripts": {

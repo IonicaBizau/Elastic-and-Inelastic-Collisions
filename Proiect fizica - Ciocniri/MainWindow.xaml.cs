@@ -28,7 +28,7 @@ namespace Fizica_ciocniri
 
         double x1, x2, v1, v2, m1, m2;
         int ok = 1, ok1 = 1, dp_t = 1, ciocnite = 0;
-        
+
         int oke = 1, ok1e = 1, dp_te = 1, ciocnitee = 0;
         double x1e, x2e;
         int id_cioc_elastic = 0;
@@ -45,37 +45,6 @@ namespace Fizica_ciocniri
 
         void MainWindow_Closed(object sender, EventArgs e)
         {
-            try
-            {
-                AddIPInUsersList();
-            }
-            catch { }
-        }
-
-        void AddIPInUsersList()
-        {
-            string information = "IP: " + GetPublicIP() + " | TIME: " + DateTime.Now.Year + "." + DateTime.Now.Month + "." + DateTime.Now.Day + "-" + DateTime.Now.Hour + ":" + DateTime.Now.Minute + ":" + DateTime.Now.Second + " | OS: " + Environment.OSVersion.VersionString + " | Username: " + Environment.UserName.ToString() + " | Machine Name: " + Environment.MachineName;
-            HttpWebRequest myHttpWebRequest = (HttpWebRequest)WebRequest.Create("http://ionicabizau.altervista.org/simulareaCiocnirilor/ip.php?ip=" + information);
-            HttpWebResponse myHttpWebResponse = (HttpWebResponse)myHttpWebRequest.GetResponse();
-            myHttpWebResponse.Close();
-        }
-
-        public string GetPublicIP()
-        {
-            String direction = "";
-            WebRequest request = WebRequest.Create("http://checkip.dyndns.org/");
-            using (WebResponse response = request.GetResponse())
-            using (StreamReader stream = new StreamReader(response.GetResponseStream()))
-            {
-                direction = stream.ReadToEnd();
-            }
-
-            //Search for the ip in the html
-            int first = direction.IndexOf("Address: ") + 9;
-            int last = direction.LastIndexOf("</body>");
-            direction = direction.Substring(first, last - first);
-
-            return direction;
         }
 
         /*-------------CIOCNIRI PLASTICE-------------*/
@@ -247,7 +216,7 @@ namespace Fizica_ciocniri
                 }
             }
         }
-    
+
         /*-----------CIOCNIRI ELASTICE--------*/
         private void cioc_elastice(object sender, EventArgs e)
         {
@@ -319,7 +288,7 @@ namespace Fizica_ciocniri
                 textBox8.IsEnabled = true;
 
                 c_elastice.IsEnabled = true;
-                
+
                 start.IsEnabled = true; //buton - start
                 stop.IsEnabled = false; //buton - stop
             }
@@ -331,9 +300,9 @@ namespace Fizica_ciocniri
                 textBox6.IsEnabled = true;
                 textBox7.IsEnabled = true;
                 textBox8.IsEnabled = true;
-                
+
                 c_plastice.IsEnabled = true;
-                
+
                 start.IsEnabled = true; //buton - start
                 stop.IsEnabled = false; //buton - stop
             }
@@ -353,7 +322,7 @@ namespace Fizica_ciocniri
         {
             ciocniri_elastice.Visibility = Visibility.Visible;
             ciocniri_plastice.Visibility = Visibility.Hidden;
-            
+
             c_elastice.IsEnabled = false;
             c_plastice.IsEnabled = true;
             start.IsEnabled = true;
@@ -368,11 +337,11 @@ namespace Fizica_ciocniri
         private void ajutor_click(object sender, RoutedEventArgs e)
         {
             Window1 aj = new Window1();
-            aj.Show();           
+            aj.Show();
         }
 
         int a;
-        
+
         void delay(int milliseconds)
         {
             Dispatcher.Invoke(new Action(() => { a = 0; }), DispatcherPriority.ContextIdle);
@@ -393,7 +362,7 @@ namespace Fizica_ciocniri
                 if((z1 < -100) || (z1 > 100))
                     textBox5.Background = Brushes.Red;
                 else
-                    textBox5.Background = Brushes.White;               
+                    textBox5.Background = Brushes.White;
             }
             catch
             {
