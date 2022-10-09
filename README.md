@@ -29,7 +29,7 @@
 
 
 
-> A simulation of elastic and inelastic collisions
+> A simulation of elastic and inelastic collisions.
 
 
 
